@@ -1,0 +1,7 @@
+function [xmz, xpz] = coord(Nz,dz)
+j=0:Nz;
+i=(0:Nz)';
+xmz = dz*(j - i);
+xmz = dz*(j - i);
+end
+

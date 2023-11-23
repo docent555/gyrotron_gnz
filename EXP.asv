@@ -1,0 +1,12 @@
+function [Em, Ep, SINm, SINp, ] = EXP(xmz, xpz, DT)
+argm = xmz.^2/(4*DT);
+argp = xpz.^2/(4*DT);
+
+SINm = sin(argm);
+SINp = sin(argp);
+COSm = cos(argm);
+COSp = cos(argp);
+Em = exp(-1i*eargm);
+Ep = exp(-1i*eargp);
+end
+
